@@ -13,7 +13,7 @@ Express based backend application with React frontend.
 3. `node index.js` run api server(app-manager will run on `80`)
 
 APIs:
-1. `http://localhost/_actions/start` to start application
+1. `http://localhost/_actions/start` to start application (First time takes time to pull and build the docker images)
 
     ```
     curl -X POST http://localhost/_action/start
