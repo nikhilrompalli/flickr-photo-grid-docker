@@ -14,11 +14,33 @@ Express based backend application with React frontend.
 
 APIs:
 1. `http://localhost/_actions/start` to start application
+
+    ```
+    curl -X POST http://localhost/_action/start
+    ```
 2. `http://localhost/_actions/stop` to stop application
+
+    ```
+    curl -X POST http://localhost/_action/stop
+    ```
+    
 3. `http://localhost/_actions/reload` to restart application
+
+    ```
+    curl -X POST http://localhost/_action/reload
+    ```
+    
 4. `http://localhost/_actions/logs` to get logs from flickr-photo-grid-api
+
+    ```
+    curl -X GET http://localhost/_action/logs
+    ```
+    
 5. `http://localhost/_actions/flush-redis` to flush the redis cache
 
+    ```
+    curl -X POST http://localhost/_action/flush-redis
+    ```
 
 Ports:
 1. app-manager - `80`
