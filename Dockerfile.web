@@ -1,0 +1,6 @@
+FROM node:12.3.1
+RUN mkdir web
+ADD web ./web/
+WORKDIR web
+RUN npm install
+CMD yarn start

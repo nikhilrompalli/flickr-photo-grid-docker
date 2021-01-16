@@ -1,0 +1,6 @@
+FROM node:12.3.1
+RUN mkdir api
+ADD api ./api/
+WORKDIR api
+RUN yarn install
+CMD node index.js
